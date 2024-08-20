@@ -27,7 +27,7 @@ public static class Translator
     public static void LoadLangs()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        var fileNames = assembly.GetManifestResourceNames().Where(x => x.StartsWith($"YMG.Resources.Languages."));
+        var fileNames = assembly.GetManifestResourceNames().Where(x => x.StartsWith($"YuMoreGamemodes.Resources.Languages."));
         foreach (var fileName in fileNames)
         {
             Logger.Msg("This fileName:"+fileName,"DebugTestYMG");

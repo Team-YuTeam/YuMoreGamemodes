@@ -60,6 +60,8 @@ public class Main : BasePlugin
     public static List<PlayerControl> ClonePlayerControlsOnStart => AllPlayerControls.ToList();
     
     public static Main Instance; //设置Main实例
+
+    public static bool isModProtocol = false;
     
     public static bool IsChineseUser => Translator.GetUserLangByRegion() == SupportedLangs.SChinese;
     
@@ -78,10 +80,10 @@ public class Main : BasePlugin
     
         ResourceUtils.WriteToFileFromResource(
             "BepInEx/core/YamlDotNet.dll",
-            "YMG.Resources.InDLL.Depends.YamlDotNet.dll");
+            "YuMoreGamemodes.Resources.InDLL.Depends.YamlDotNet.dll");
         ResourceUtils.WriteToFileFromResource(
             "BepInEx/core/YamlDotNet.xml",
-            "YMG.Resources.InDLL.Depends.YamlDotNet.xml");
+            "YuMoreGamemodes.Resources.InDLL.Depends.YamlDotNet.xml");
         
         PluginModuleInitializerAttribute.InitializeAll();
         

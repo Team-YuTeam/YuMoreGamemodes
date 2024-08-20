@@ -37,3 +37,22 @@ updateSource.NextTime: "下次一定"
 updateSource.QQ: "QQ群"
 updateSource.github: "GitHub"
 updateSource.discord: "Discord"
+
+# 创建界面
+RoomProtocal: "房间协议"
+NormalProtocal: "标准协议"
+ModProtocal: "模组协议"
+
+# VerShow
+VerShow.HasUpdate: "<color=#DC143C>YMG有v{2}更新!</color>"
+VerShow.HasNotUpdate: "<color={0}>{1}</color> (<color=#00FF00>您的YMG是最新的</color>)"
+VerShow.Visit: "<color=#483D8B>{1}</color> <color=#FF00FF>已被使用 <color=#191970>{2}</color> 次啦~</color>"
+UsingVersion: "<color=#DC143C>[{2}]</color>"
+
+# 主界面按钮
+InviteButton: "QQ群" # If Not Chinese, write Discord
+WebsiteButton: "网站"
+BiliBiliButton: "B站赞助"
+AfdianButton: "爱发电"
+DevsButton: "开发人员"
+ProjectButton: "Gitee" # If Not Chinese, write Github

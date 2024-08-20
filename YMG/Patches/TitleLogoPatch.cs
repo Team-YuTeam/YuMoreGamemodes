@@ -52,7 +52,7 @@ internal class TitleLogoPatch
         YuET_Background = new GameObject("YuET Background");
         YuET_Background.transform.position = new Vector3(-0.0182f,0f, 520f);
         var bgRenderer = YuET_Background.AddComponent<SpriteRenderer>();
-        bgRenderer.sprite = LoadSprite("YuEzTools.Resources.YuET-BG.jpg", 179f);//Bg
+        bgRenderer.sprite = LoadSprite("YuMoreGamemodes.Resources.BackGround.jpg", 179f);//Bg
         
         if (!(Ambience = GameObject.Find("Ambience"))) return;
         if (!(Starfield = Ambience.transform.FindChild("starfield").gameObject)) return;
@@ -128,7 +128,7 @@ internal class TitleLogoPatch
         AULogo.transform.localScale = new Vector3(0.66f, 0.67f, 1f);
         AULogo.transform.position += new Vector3(0f, 0.1f, 0f);
         var logoRenderer = AULogo.GetComponent<SpriteRenderer>();
-        logoRenderer.sprite = LoadSprite("YuEzTools.Resources.YuET-Logo-tm.png",100f);//Yu的Logo
+        logoRenderer.sprite = LoadSprite("YuMoreGamemodes.Resources.YuET-Logo-tm.png",100f);//Yu的Logo
 
         if (!(BottomButtonBounds = GameObject.Find("BottomButtonBounds"))) return;
         BottomButtonBounds.transform.localPosition -= new Vector3(0f, 0.1f, 0f);
@@ -140,7 +140,7 @@ internal class TitleLogoPatch
         CloseRightButton.transform.localScale = new(1f, 1f, 1f);
         CloseRightButton.AddComponent<BoxCollider2D>().size = new(0.6f, 1.5f);
         var closeRightSpriteRenderer = CloseRightButton.AddComponent<SpriteRenderer>();
-        //closeRightSpriteRenderer.sprite = LoadSprite("YuEzTools.Resources.Images.RightPanelCloseButton.png", 100f);
+        //closeRightSpriteRenderer.sprite = LoadSprite("YuMoreGamemodes.Resources.Images.RightPanelCloseButton.png", 100f);
         closeRightSpriteRenderer.color = new(1f, 0.78f, 0.9f, 1f);
         var closeRightPassiveButton = CloseRightButton.AddComponent<PassiveButton>();
         closeRightPassiveButton.OnClick = new();

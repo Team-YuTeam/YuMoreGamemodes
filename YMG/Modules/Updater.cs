@@ -78,7 +78,7 @@ public class ModUpdater
         firstStart = false;
     }
     private static readonly string URL_2018k = "http://api.2018k.cn";
-    public static string UrlSetId(string url) => url + "?id=CAEFF4652FB44BAAA4F6E300404F528F";
+    public static string UrlSetId(string url) => url + "?id=242482257E8643F5BCEB934E19E9A808";
     public static string UrlSetInfo(string url) => url + "/getExample";
     public static void AddVisit()
     {
@@ -176,7 +176,7 @@ public class ModUpdater
                 {
                     (Translator.GetString("updateSource.Afdian"), () => Application.OpenURL("https://afdian.com/a/yuqianzhi")),
                     (Translator.GetString("updateSource.BiliBili"), () => Application.OpenURL("https://www.bilibili.com/opus/898712994671755300")),
-                    (Translator.GetString(Translator.IsChineseLanguageUser ? "updateSource.QQ" : "updateSource.github"), () => Application.OpenURL(Translator.IsChineseLanguageUser ? Main.QQUrl : "https://github.com/Team-YuTeam/YuEzTools/issues/new/choose")),
+                    (Translator.GetString(Translator.IsChineseLanguageUser ? "updateSource.QQ" : "updateSource.github"), () => Application.OpenURL(Translator.IsChineseLanguageUser ? Main.QQUrl : "https://github.com/Team-YuTeam/YuMoreGamemodes/issues/new/choose")),
                     (Translator.GetString("updateSource.NextTime"), null)
                 });
             }
@@ -342,7 +342,7 @@ public class ModUpdater
             foreach (var path in Directory.EnumerateFiles(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "*.*"))
             {
                 if (path.EndsWith(Path.GetFileName(Assembly.GetExecutingAssembly().Location))) continue;
-                if (path.EndsWith("YuEzTools.dll") || path.EndsWith("Downloader.dll")) continue;
+                if (path.EndsWith("YMG.dll") || path.EndsWith("Downloader.dll")) continue;
                 Logger.Info($"{Path.GetFileName(path)} Deleted", "DeleteOldFiles");
                 File.Delete(path);
             }
@@ -378,7 +378,7 @@ public class ModUpdater
             {
                 var fileName = Assembly.GetExecutingAssembly().Location;
                 File.Move(fileName, fileName + ".bak");
-                File.Move("BepInEx/plugins/YuEzTools.dll.temp", fileName);
+                File.Move("BepInEx/plugins/YMG.dll.temp", fileName);
                 return (true, null);
             }
         }

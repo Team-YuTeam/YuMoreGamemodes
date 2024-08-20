@@ -159,8 +159,8 @@ public class MainMenuManagerPatch
         WebsiteButton.name = "YuET Website Button";
 
         var ProjectLink = IsChineseLanguageUser
-            ? "https://gitee.com/xigua_ya/YuEzTools/"
-            : "https://github.com/Team-YuTeam/YuEzTools/";
+            ? "https://gitee.com/xigua_ya/YuMoreGamemodes/"
+            : "https://github.com/Team-YuTeam/YuMoreGamemodes/";
         if (ProjectButton == null) ProjectButton = CreatButton("ProjectButton", () => Application.OpenURL(ProjectLink));
         ProjectButton.gameObject.SetActive(true);
         ProjectButton.name = "YuET Project Button";
